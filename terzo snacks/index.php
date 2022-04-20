@@ -60,20 +60,20 @@ $posts = [
         
         $value  = array_values($posts);
         $keys   = array_keys($posts);
-
         
-        for ( $i = 0; $i < count($keys); $i++){;?>
-            <h5> Data: <?php echo $keys[$i]; ?> </h5>
+        
+        for ( $i = 0; $i < count($keys); $i++){ ?>
+            <h5> Data: <?php echo $keys[$i] ?> </h5>
                 <?php for ($index = 0; $index < count($value[$i]); $index++) { ?>
 
             <p>  
-                <?php echo $value[$i][$index]['title']; ?> 
+                <?php echo $value[$i][$index]['title'] ?> 
             </p>
             <p>  
-                <?php echo $value[$i][$index]['author']; ?>
+                <?php echo $value[$i][$index]['author'] ?>
             </p>
             <p>  
-                <?php echo $value[$i][$index]['text']; ?>  
+                <?php echo $value[$i][$index]['text'] ?>  
             </p>
 
             <?php } ?>

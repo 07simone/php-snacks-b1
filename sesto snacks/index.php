@@ -23,7 +23,7 @@
         ]
     ];
 
-$valori= array_values($db);
+
 
 $insegnante = $db["teachers"];
 
